@@ -1,32 +1,20 @@
-# Prerequisites
-*.d
+// Homework 1
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+// Create a program to determine whether an integer entered by the user is an even or odd number.
 
-# Precompiled Headers
-*.gch
-*.pch
+#include <iostream>
+using namespace std;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main(){
+    int number;
+    
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    if(number % 2 == 0){
+        cout << "The number is Even." << endl;
+    } else {
+        cout << "The number is Odd." << endl;
+    }
+    return 0;
+}
